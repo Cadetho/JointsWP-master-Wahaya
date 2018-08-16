@@ -1,0 +1,150 @@
+
+.header{
+	background-color: #00000060;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+.main{
+	position: relative;
+	height: 100vh;
+}
+//Top Nav Bar
+.top-bar{
+	padding-top: 0;
+}
+//Top Left Nav Bar
+.top-bar-left a{
+	padding-top: 0;
+	max-height: 65px;
+}
+.top-bar-left img{
+	max-height: 65px;
+	width: auto;
+}
+
+//Top Right Nav Bar
+.top-bar-right{
+	padding-top:.5rem;
+}
+.top-bar-right ul{
+	float: left;
+}
+.top-bar-right a{
+	font-weight: bold;
+	color: white;
+}
+
+.hero-y-container{
+	height: 80vh;
+}
+
+.pattern-container{
+	background-image: url('../images/wahaya-heropattern.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 0;
+	width: 84vh;
+	height: 109vh;
+	z-index: 1;
+}
+.search-button{
+	background-image: url('../images/search-icon.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 5px;
+}
+.solutions-button{
+	background-image: url('../images/dropdown-arrow.png');
+	background-repeat: no-repeat;
+	background-position: 87% 55%;
+	background-size: 10%;
+}
+.solutions-button a{
+	padding-right: 1.6rem !important;
+}
+
+body{
+	background-image: url('../images/background.png');
+	background-repeat: no-repeat;
+
+}
+.top-bar, .top-bar ul{
+	background-color: #00000000;
+}
+
+.hero-banner{
+	font-size: 8rem;
+	font-family: BrandonGrotesque-Black;
+	color: #098cbf;
+	line-height: 7rem;
+}
+@media only screen and (min-width:40em) {
+	.main{
+		padding-left: 10%;
+	}
+	.hero-banner{
+		min-width:700px;
+	}
+	.pattern-container{
+		min-width: 600px;
+	}
+}
+.hero-subtext{
+	font-size: 1.4rem;
+	color: white;
+}
+.grid-margin-y{
+	margin-top: 4%;
+}
+.grid-margin-x{
+	margin-left: 2.5%;
+}
+.grid-margin-button-y{
+	margin-top: 2%;
+}
+.button-offset{
+	margin-left: 4%;
+}
+.homepage-button button{
+	font-size: 1.6rem;
+	padding: .75rem;
+	border-radius: 5px;
+	width: 100%;
+	color: white;
+	background-color: #098cbf; 
+	border: 1px solid #2e2e2e;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.homepage-button button:hover{
+	background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+}
+.services-container{
+	color: #484848;
+	width: 100%;
+	z-index: 0;
+	position: relative;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+.services-box{
+	padding-top:7%;
+	width: 80% !important;
+	margin: 0 auto;
+}
+.services-banner{
+	font-size: 1.4rem;
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+.service-grid-x{
+	height: 100%;
+}
+.service-box{
+	padding: 10%
+}
