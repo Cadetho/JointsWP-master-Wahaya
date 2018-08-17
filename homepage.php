@@ -33,25 +33,94 @@ get_header(); ?>
 		    <div class="services-container">
 					<div id="services-box" class="grid-y medium-grid-frame large-grid-frame services-box">
 						<div class="cell medium-2 large-2 small-2">
-							<div class="services-banner">Our mission is to provide a higher level of customer service than people are used to. In this fast moving world, many companies strive to compete by price and selection alone. In addition to price and selection, customer service, customer satisfaction, and customer commitment are our goals.</div>
+							<div class="services-banner">Our mission is to provide a higher level of customer service than people are used to. In this fast moving world, many companies strive to compete by price and selection alone. In addition to price and selection, customer service, customer satisfaction, and customer commitment are our goals. Below you will find information on each of our services.</div>
 						</div>
-						<div class="cell medium-5 large-5 small-5">
+						<div class="cell medium-5 large-5 small-5 service-border-bottom">
 							<div class="grid-x service-grid-x">
-								<div class="cell small-4 large-4 medium-4 service-box services-1"></div>
-								<div class="cell small-4 large-4 medium-4 service-box services-2"></div>
-								<div class="cell small-4 large-4 medium-4 service-box services-3"></div>
+								<div class="cell small-4 large-4 medium-4">
+									<div class="service-box">
+										<img src="<?php bloginfo('template_url'); ?>/assets/images/services-1.jpg"/>
+										<div class="service-bg-box">
+											<h2>Managed Services</h2>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</div>
+								</div>
+								<div class="cell small-4 large-4 medium-4">
+									<div class="service-box">
+										<img src="<?php bloginfo('template_url'); ?>/assets/images/services-2.jpg"/>
+										<div class="service-bg-box">
+											<h2>Disaster Mitigation</h2>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</div>
+								</div>
+								<div class="cell small-4 large-4 medium-4">
+									<div class="service-box">
+										<img src="<?php bloginfo('template_url'); ?>/assets/images/services-3.jpg"/>
+										<div class="service-bg-box">
+											<h2>Virtualization Services</h2>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="cell medium-5 large-5 small-5">
 							<div class="grid-x service-grid-x">
-								<div class="cell small-4 large-4 medium-4 service-box services-4"></div>
-								<div class="cell small-4 large-4 medium-4 service-box services-5"></div>
-								<div class="cell small-4 large-4 medium-4 service-box services-6"></div>
+								<div class="cell small-4 large-4 medium-4">
+									<div class="service-box">
+										<img src="<?php bloginfo('template_url'); ?>/assets/images/services-4.jpg"/>
+										<div class="service-bg-box">
+											<h2>Security & Compliance</h2>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</div>
+								</div>
+								<div class="cell small-4 large-4 medium-4">
+									<div class="service-box">
+										<img src="<?php bloginfo('template_url'); ?>/assets/images/services-5.jpg"/>
+										<div class="service-bg-box">
+											<h2>Unified Communications</h2>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</div>
+								</div>
+								<div class="cell small-4 large-4 medium-4">
+									<div class="service-box">
+										<img src="<?php bloginfo('template_url'); ?>/assets/images/services-6.png"/>
+										<div class="service-bg-box">
+											<h2>Hardware & Software</h2>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 			</div>
-
+			<div class="blog-promoted">
+				<div class="post-carousel">
+					<?php
+						$args = array( 'category_name' => 'Featured');
+						$featuredposts = get_posts($args);
+						foreach($featuredposts as $post) :
+							setup_postdata($post);	
+							$media = get_attached_media($post);?>
+							<div>
+								<div class="post-card">
+									<?php the_post_thumbnail(); ?>
+									<div class="post-content">
+										<?php the_content(); ?>
+									</div>
+								</div>
+							</div>
+						<?php
+						endforeach; 
+						wp_reset_postdata();
+						?>
+				</div>
+			</div>
 		</div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->
