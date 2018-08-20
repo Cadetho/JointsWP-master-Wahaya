@@ -2,17 +2,17 @@
 
 jQuery(document).ready(function(){
 	jQuery('.post-carousel').slick({
-		slidesToShow:2,
+		slidesToShow:3,
 		infinite: false,
 		responsive: [{
-			breakpoint: 1024,
+			breakpoint: 1400,
 			settings: {
-					slidesToShow: 3
+					slidesToShow: 2
 			}
 		},{
-			breakpoint: 600,
+			breakpoint: 850,
 			settings:{
-				slidesToShow: 2
+				slidesToShow: 1
 			}
 		},{
 			breakpoint: 300,

@@ -10,6 +10,8 @@
 .main{
 	position: relative;
 	height: 100vh;
+	z-index: 2;
+	padding-left: 1%;
 }
 //Top Nav Bar
 .top-bar{
@@ -77,25 +79,16 @@ body{
 }
 
 .hero-banner{
-	font-size: 8rem;
+	font-size: 4rem;
 	font-family: BrandonGrotesque-Black;
 	color: #098cbf;
 	line-height: 7rem;
 }
-@media only screen and (min-width:40em) {
-	.main{
-		padding-left: 10%;
-	}
-	.hero-banner{
-		min-width:700px;
-	}
-	.pattern-container{
-		min-width: 600px;
-	}
-}
+
 .hero-subtext{
 	font-size: 1.4rem;
 	color: white;
+	padding-right: 2%;
 }
 .grid-margin-y{
 	margin-top: 4%;
@@ -131,13 +124,13 @@ body{
 	background-color: #FFFFFF;
 }
 .services-box{
-	padding-top:7%;
-	width: 80% !important;
-	margin: 0 auto;
+	width: 100%;
+	margin: 5% auto;
+	height: auto !important;
 }
 .services-banner{
-	font-size: 1.4rem;
-	width: 70%;
+	font-size: 1.2rem;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 	position: relative;
@@ -146,17 +139,31 @@ body{
 	height: 100%;
 }
 .service-box{
-	height:90%;
-	width: 90%;
-	margin: 0 auto;
+	height:100%;
+	width: 100%;
+	margin: 10px auto;
 	position: relative;
 	overflow: hidden;
 	text-align: center;
 	cursor: pointer;
-	max-height: 360px;
-	max-width: 480px;
-	min-width:320px;
+	max-height: 400px;
+	max-width: 400px;
+	min-width:200px;
 	background: #484848;
+}
+.flex-services{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: -webkit-box;
+	display: -mox-box;
+	display: -ms-box;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
 }
 .service-bg-box{
 	padding: 3em;
@@ -232,7 +239,8 @@ body{
 	display: block;
 	min-height: 100%;
 	min-width: 100%;
-	height: 390px;
+	height: 440px;
+	object-fit: cover;
 	opacity: 0.3;
 	transform: translate3d(0,-30px,0);
 }
@@ -241,7 +249,9 @@ body{
 	opacity: 0.2;
 	transform: translate3d(0,0,0);
 }
-
+.mission-box{
+	margin-bottom: 2%;
+}
 
 .blog-promoted{
 	background-image: url('../images/blog-promoted.png');
@@ -252,19 +262,140 @@ body{
 
 .post-carousel{
 	width: 80%;
-	height: 100%;
-	margin: 0 auto;
+	height: 75%;
+	margin: 6% auto;
 }
 	
 .post-card{
-	margin: 30px;
-	border: 1px solid black;
+	border: 2px solid white;
 	box-sizing: border-box;
 	display: block;
+	background-color: #484848EE;
+	position: relative;
+}
+.post-thumbnail{
+	height: 40% !important;
+	width: 100%;
+	margin-bottom: 5%;
+	overflow: hidden;
 }
 
-
-
+.post-content img{
+	width: 90%;
+}
+.featured-post-title{
+	height: auto !important;
+	color: #098cbf;
+	text-align: center;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
 .slick-list{
-	height: 75%;
+	height: 100%;
+}
+.slick-track{
+	height: 100%;
+}
+.post-content{
+	height: 50% !important;
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+}
+.post-card img{
+	height: auto;
+	margin: 0 auto;
+	width: 100%;
+	object-fit: cover;
+	
+}
+.outer-card{
+	height: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.slick-slide div{
+	height: 100%;
+}
+
+.read-more-featured{
+	position: absolute;
+	
+	bottom: 5px;
+	right: 7.5px;
+	height: auto !important;
+}
+.read-more-featured > a{
+	position: relative;
+	text-decoration: none;
+}
+.read-more-featured > a:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	let: 0;
+	background-color: #fff;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+.read-more-featured > a:hover:before{
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+#menu-footermenu{
+	justify-content: flex-end;
+}
+.footer{
+	background-color: #353535;
+	margin-top: 0;
+	padding-top: 1em;
+}
+.copyright{
+	color: #098cbf;
+}
+@media only screen and (min-width:40em) {
+	.main{
+		padding-left: 4%;
+	}
+	.hero-banner{
+		font-size: 6rem;
+		min-width:800px;
+	}
+	.pattern-container{
+		min-width: 600px;
+	}
+
+}
+@media only screen and(min-width:57em){
+	.main{
+		padding-left: 10%;
+	}
+	.hero-banner{
+		font-size: 8rem;
+	}
+	.hero-subtext{
+		min-width: 800px;
+	}
+	.services-banner{
+		font-size: 1.4rem !important;
+	}
+
+}
+
+@media only screen and(min-width:85em){
+	.services-banner{
+		width: 70%;
+	}
+	.services-box{
+		width: 80% !important;
+	}
+
 }

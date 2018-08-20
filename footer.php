@@ -11,17 +11,14 @@
 				<footer class="footer" role="contentinfo">
 					
 					<div class="inner-footer grid-x grid-margin-x grid-padding-x">
-						
-						<div class="small-12 medium-12 large-12 cell">
-							<nav role="navigation">
-	    						<?php joints_footer_links(); ?>
-	    					</nav>
-	    				</div>
-						
-						<div class="small-12 medium-12 large-12 cell">
-							<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
+						<div class="small-3 medium-6 large-6 cell">
+							<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> LLC. ALL RIGHTS RESERVED UNLESS OTHERWISE STATED.</p>
 						</div>
-					
+						<div class="small-9 medium-6 large-6 cell">
+							<nav role="navigation" class="footer-nav">
+								<?php joints_footer_links(); ?>
+							</nav>
+						</div>
 					</div> <!-- end #inner-footer -->
 				
 				</footer> <!-- end .footer -->
