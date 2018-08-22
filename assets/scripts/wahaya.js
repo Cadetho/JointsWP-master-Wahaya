@@ -2,6 +2,7 @@
 
 jQuery(document).ready(function(){
 	jQuery('.post-carousel').slick({
+		lazyLoad: 'ondemand',
 		slidesToShow:3,
 		infinite: false,
 		responsive: [{
@@ -20,5 +21,18 @@ jQuery(document).ready(function(){
 				slidesToShow: 1
 			}
 		}]
+	});
+	
+	jQuery('.testimonial-carousel').slick({
+		lazyLoad: 'ondemand',
+		fade: true,
+		slidesToShow:1,
+		arrows: false,
+		dots: true,
+		draggable: true,
+		infinite: true,
+		pauseOnHover: true,
+		autoplay: true,
+		autoplaySpeed: 5000
 	});
 });

@@ -8,8 +8,8 @@ get_header(); ?>
 	<div class="content">
 	
 		<div class="inner-content home-content grid-x  grid-padding-x">
-		<div class="pattern-container"></div>
 		    <main class="main" role="main">
+				<div class="pattern-container"></div>
 				<div class="grid-y hero-y-container">
 					<div class="cell small-2 medium-3 large-3"></div>
 					<div class="cell small-5 medium-5 large-5">
@@ -25,58 +25,145 @@ get_header(); ?>
 				</div>
 			</main> <!-- end #main -->
 		    <div class="services-container">
-					<div id="services-box" class="grid-y medium-grid-frame large-grid-frame services-box">
-						<div class="cell medium-2 large-2 small-2 mission-box">
-							<div class="services-banner">Our mission is to provide a higher level of customer service than people are used to. In this fast moving world, many companies strive to compete by price and selection alone. In addition to price and selection, customer service, customer satisfaction, and customer commitment are our goals. Below you will find information on each of our services.</div>
+				<div class="services-row">
+					<div class="services-banner">
+						<div class="services-title">
+							<h2>OUR <span>SERVICES</span></h2>
+							<div class="services-icon"><img src="<?php bloginfo('template_url'); ?>/assets/images/services-icons/title-icon.png" /></div>
+							<p>Duis aliquet metus vel nunc convallis placerat. Maecenas erat dui rhoncus a est vel,</p>
 						</div>
-						<div class="flex-services">
-							<div class="service-box">
-								<img src="<?php bloginfo('template_url'); ?>/assets/images/services-1.jpg"/>
-								<div class="service-bg-box">
-									<h2>Managed Services</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-							</div>
-							<div class="service-box">
-								<img src="<?php bloginfo('template_url'); ?>/assets/images/services-2.jpg"/>
-								<div class="service-bg-box">
-									<h2>Disaster Mitigation</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-							</div>
-							<div class="service-box">
-								<img src="<?php bloginfo('template_url'); ?>/assets/images/services-3.jpg"/>
-								<div class="service-bg-box">
-									<h2>Virtualization Services</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-							</div>
-							<div class="service-box">
-								<img src="<?php bloginfo('template_url'); ?>/assets/images/services-4.jpg"/>
-								<div class="service-bg-box">
-									<h2>Security & Compliance</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-							</div>
-							<div class="service-box">
-								<img src="<?php bloginfo('template_url'); ?>/assets/images/services-5.jpg"/>
-								<div class="service-bg-box">
-									<h2>Unified Communications</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-							</div>
-							<div class="service-box">
-								<img src="<?php bloginfo('template_url'); ?>/assets/images/services-6.png"/>
-								<div class="service-bg-box">
-									<h2>Hardware & Software</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-							</div>
 					</div>
+				</div>
+				<div class="services-row">
+					<div class="service-box">
+						<div class="service">
+							<div class="single-service-icon">
+								<span class="flaticon-managed">
+								</span>
+							</div>
+							<h2>MANAGED SERVICES</h2>
+							<p>Duis aliquet metus vel nunc convallis placea Maecenas erat dui, rhoncus a est vel,que metus vel nunc convallis.</p>
+						</div>
+					</div>
+					<div class="service-box">
+						<div class="service">
+							<div class="single-service-icon">
+								<span class="flaticon-disaster">
+								</span>
+							</div>
+							<h2>DISASTER MITIGATION</h2>
+							<p>Duis aliquet metus vel nunc convallis placea Maecenas erat dui, rhoncus a est vel,que metus vel nunc convallis.</p>
+						</div>
+					</div>
+					<div class="service-box">
+						<div class="service">
+							<div class="single-service-icon">
+								<span class="flaticon-virtualization">
+								</span>
+							</div>
+							<h2>VIRTUALIZATION SERVICES</h2>
+							<p>Duis aliquet metus vel nunc convallis placea Maecenas erat dui, rhoncus a est vel,que metus vel nunc convallis.</p>
+						</div>
+					</div>
+					<div class="service-box">
+						<div class="service">
+							<div class="single-service-icon">
+								<span class="flaticon-security">
+								</span>
+							</div>
+							<h2>SECURITY & COMPLIANCE</h2>
+							<p>Duis aliquet metus vel nunc convallis placea Maecenas erat dui, rhoncus a est vel,que metus vel nunc convallis.</p>
+						</div>
+					</div>
+					<div class="service-box">
+						<div class="service">
+							<div class="single-service-icon">
+								<span class="flaticon-communications">
+								</span>
+							</div>
+							<h2>UNIFIED COMMUNICATIONS</h2>
+							<p>Duis aliquet metus vel nunc convallis placea Maecenas erat dui, rhoncus a est vel,que metus vel nunc convallis.</p>
+						</div>
+					</div>
+					<div class="service-box">
+						<div class="service">
+							<div class="single-service-icon">
+								<span class="flaticon-hands">
+								</span>
+							</div>
+							<h2>HARDWARE & SOFTWARE</h2>
+							<p>Duis aliquet metus vel nunc convallis placea Maecenas erat dui, rhoncus a est vel,que metus vel nunc convallis.</p>
+						</div>
+					</div>
+					
+				</div>
 			</div>
-		</div>
+			<div class="testimonial-container">
+				<div class="inner-test-container">
+					<div class="testimonial-carousel">
+						<div class="testimonial-box">
+							<div class="test-inner-box">
+								<div class="testimonial-logo">
+									<img src="<?php bloginfo('template_url'); ?>/assets/images/wahaya-logo.png" />
+								</div>
+								<p>
+									"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+								</p>
+								<h4>- Wahaya</hr>
+								<span>Baton Rouge, Louisiana</span>
+							</div>
+						</div>
+						<div class="testimonial-box">
+							<div class="test-inner-box">
+								<div class="testimonial-logo">
+									<img src="<?php bloginfo('template_url'); ?>/assets/images/wahaya-logo.png" />
+								</div>
+								<p>
+									"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+								</p>
+								<h4>- Wahaya</hr>
+								<span>Baton Rouge, Louisiana</span>
+							</div>
+						</div>
+						<div class="testimonial-box">
+							<div class="test-inner-box">
+								<div class="testimonial-logo">
+									<img src="<?php bloginfo('template_url'); ?>/assets/images/wahaya-logo.png" />
+								</div>
+								<p>
+									"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+								</p>
+								<h4>- Wahaya</hr>
+								<span>Baton Rouge, Louisiana</span>
+							</div>
+						</div>
+						<div class="testimonial-box">
+							<div class="test-inner-box">
+								<div class="testimonial-logo">
+									<img src="<?php bloginfo('template_url'); ?>/assets/images/wahaya-logo.png" />
+								</div>
+								<p>
+									"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+								</p>
+								<h4>- Wahaya</hr>
+								<span>Baton Rouge, Louisiana</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="blog-promoted">
-				<div class="post-carousel">
+				<div class="post-container">
+					<div class="post-container-title">
+						<div class="post-inner-title">
+							<div class="post-title-box">
+								<h2>LATEST <span>ARTICLES</span></h2>
+								<div class="services-icon"><img src="<?php bloginfo('template_url'); ?>/assets/images/services-icons/news-report.png" /></div>
+								<p>Duis aliquet metus vel nunc convallis placerat. Maecenas erat dui rhoncus a est vel</p>
+							</div>
+						</div>
+					</div>
+					<div class="post-carousel">
 					<?php
 						$args = array( 'category_name' => 'Featured');
 						$featuredposts = get_posts($args);
@@ -100,6 +187,7 @@ get_header(); ?>
 						endforeach; 
 						wp_reset_postdata();
 						?>
+					</div>
 				</div>
 			</div>
 		</div> <!-- end #inner-content -->
